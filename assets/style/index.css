@@ -1,0 +1,138 @@
+@import "./base.css";
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Banner                                          */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.banner {
+  height: calc(100vh - var(--app-header-height));
+  background: var(--app-red) url(../img/hero-banner.jpg) center center / cover no-repeat fixed;
+}
+
+/* Text */
+.hero-title, .hero-p {
+  color: var(--app-light);
+}
+.hero-title {
+  font-size: 32px;
+  font-weight: 400;
+  text-decoration: underline 3px solid var(--app-green);
+  background-color: #03002289;
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 6px 6px 6px 0;
+}
+.hero-p {
+  background-color: #03002289;
+  width: fit-content;
+  padding: 5px 15px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Intro                                           */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* General */
+#intro {
+  gap: 20px;
+}
+
+/* Heading */
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: 2px underline var(--app-red);
+  width: 100%;
+}
+
+/* Paragraphs */
+#intro {
+  padding-top: 60px;
+}
+#intro .intro-text {
+  width: calc(50% - 15px);
+}
+.domestic {
+  text-decoration: 2px underline var(--app-blue);
+}
+.import {
+  text-decoration: 2px underline var(--app-orange);
+}
+#intro .intro-text + .intro-text {
+  margin-left: 10px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Featured                                        */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.featured {
+  position: relative;
+  width: 650px;
+  height: 400px;
+  margin-inline: auto;
+  margin-top: 80px;
+  border-radius: 6px;
+  backdrop-filter: contrast(0%) brightness(2);
+  transition: backdrop-filter 2s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: none;
+  /* transition: backround-image 0.25s ease; */
+}
+.featured.gtr {
+  background-image: url(../img/featured/nissan-r34-gtr.jpg);
+}
+.featured.s2000 {
+  background-image: url(../img/featured/honda-s2000.jpg);
+}
+.featured.miata {
+  background-image: url(../img/featured/mazda-miata-mx5.jpg);
+}
+.featured.supra {
+  background-image: url(../img/featured/toyota-supra-mk4.jpg);
+}
+
+.featured h2 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background-color: #030022c9;
+  width: fit-content;
+  padding: 10px 30px;
+  color: var(--app-light);
+  border-radius: 6px;
+}
+.featured p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: #030022c9;
+  width: fit-content;
+  padding: 10px 30px;
+  color: var(--app-light);
+  border-radius: 6px
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Index                                           */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#index {
+  padding-top: 80px;
+  gap: 20px;
+  padding-bottom: 120px;
+}
+.brand-column {
+  width: calc(25% - 15px);
+}
+.brand-column a:hover {
+  text-decoration: underline;
+}
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: 2px underline var(--app-red);
+}
