@@ -1,6 +1,5 @@
-## JDM Cars
+## Shared User
 
-A page about JDM Cars. It is a work in progress, and will showcase cars 
-that are common in the JDM world.
+This is a fake version of LinkedIn
 
-Click [here](https://daboss02.github.io/jdm-cars/) to go to the main page.
+Click [here](https://daboss02.github.io/shared-user/) to view
