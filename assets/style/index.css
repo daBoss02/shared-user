@@ -327,7 +327,22 @@ footer {
   height: 100%;
 }
 
+.links {
+  width: 80%;
+}
+.links div {
+  width: 50%;
+  gap: 10px
+}
 
+.links a {
+  width: calc(100% / 3 - 20px / 3);
+  color: var(--app-dark);
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
 
 .copyright {
   width: 20%;
