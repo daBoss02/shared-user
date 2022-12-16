@@ -4,6 +4,8 @@
 
 import { onEvent, select, selectAll, print } from './util.js';
 
+console.log(window.location)
+
 const loginBtn = select('.login-btn');
 const incorrect = select('.incorrect')
 
