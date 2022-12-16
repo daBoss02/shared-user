@@ -41,10 +41,12 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .green-monster {
-  position: fixed;
-  bottom: 0;
   right: 31px;
-  z-index: 999;
+  height: 0;
+  position: relative;
+  z-index: -999;
+  bottom: 70px;
+  left: 200px;
 }
 .green-monster img {
   width: 100px;

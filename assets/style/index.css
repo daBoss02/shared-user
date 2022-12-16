@@ -104,6 +104,46 @@ main {
   border-radius: 6px;
   position: relative;
   overflow: hidden;
+  justify-content: center;
+}
+
+.big {
+  margin-top: 30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-inline: auto;
+}
+
+.profile h2 {
+  margin-top: 10px;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+}
+
+.profile p {
+  text-align: center;
+  margin-top: 5px;
+  letter-spacing: 0.4px;
+}
+.profile p + p {
+  margin-top: 0px;
+}
+
+.profile .info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile .info div {
+  width: 50%;
+}
+.info h3 {
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.6px;
 }
 
 .sleepy-monster {
@@ -235,6 +275,43 @@ label:hover {
 .posted p + p {
   margin-left: 64px;
 }
+
+.followers h2 {
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.follower {
+  z-index: 999;
+  width: 100%;
+  justify-content: left;
+  background-color: #E7E9EB;
+  padding: 10px;
+  border-radius: 6px;
+}
+.follower + .follower {
+  margin-top: 20px;
+}
+
+.follower div {
+  height: 60px;
+  line-height: 40px;
+  margin-left: 10px;
+}
+
+.follower .flex p {
+  width: 100%;
+}
+
+.follower .location {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 2px;
+  margin-left: 20px;
+}
+
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Footer                                          */
