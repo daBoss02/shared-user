@@ -6,8 +6,8 @@
     <meta name="author" content="Seth Vandenbos">
     <meta name="description" content="my cool new project">
     <meta name="keywords" content="HTML, CSS, SEO, web, web development">
-    <title>Shared User | Seth Vandenbos</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.png?v=2" type="image/x-icon">
+    <title>Home | Shared User</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Quicksand:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap">
@@ -17,18 +17,129 @@
   </head>
   <body>
 
-   
+    <header>
+      <div class="container flex">
+        <div class="title">
+          <h1>
+            <a href="#">
+              Shared User
+            </a>
+          </h1>
+        </div>
+        <nav class="flex">
+          <ul class="flex">
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </nav>
+        <div class="user flex">
+          <h2>Seth Vandenbos</h2>
+          <div class="avatar small"></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex container">
+
+      <section class="profile one">
+        <div class="avatar big"></div>
+        <h2>Seth Vandenbos</h2>
+        <p>Software Dev</p>
+        <p class="location">Winnepeg, MB</p>
+        <div class="flex">
+          <div class="info follows">
+            <h3>Followers</h3>
+            <p>76</p>
+          </div>
+          <div class="info views">
+            <h3>Views</h3>
+            <p>126</p>
+          </div>
+        </div>
+        <div class="cool-monster">
+          <img src="./assets/img/coolmonster.svg" alt="Funny Monster">
+        </div>
+      </section>
+      
+      <section class="posts">
+        <div class="sleepy-monster">
+          <img src="./assets/img/sleepy-monster.svg" alt="Sleepy Monster">
+        </div>
+        <form class="flex">
+          <textarea placeholder="How's it going?"></textarea>
+          <div class="form-col">
+            <input type="file" class="img-input" id="file" accept="image/*">
+            <label for="file" class="label flex">
+              <i class="fa-solid fa-image"></i>
+              <p class="label-p"></p>
+            </label>
+          </div>
+          <div class="form-col">
+            <button type="button" class="post">Post</button>
+          </div>
+        </form>
+          <div class="posts-place flex">
+            <div class="posted">
+              <div class="post-header flex">
+                <div class="avatar smaller"></div>
+                <p>Seth Vandenbos</p>
+                <p>Dec 05 2022</p>
+              </div>
+              <img src="./assets/img/alero-1.jpg" alt="2004 Oldsmobile Alero">
+              <p>My car looking 🔥</p>
+            </div>
+            <div class="posted">
+              <div class="post-header flex">
+                <div class="avatar smaller"></div>
+                <p>Seth Vandenbos</p>
+                <p>Nov 15 2022</p>
+              </div>
+              <img src="./assets/img/bandit.jpg" alt="Bandit the dog">
+              <p>My car looking 🔥</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="followers one">
+
+      </section>
+      <!-- <div class="green-monster">
+        <img src="./assets/img/toothless-monster.svg" alt="Green Monster">
+      </div> -->
+
+    </main>
+
+    <footer>
+
+      <div class="container footer flex">
+        <div class="links flex">
+          <a href="#">
+            <p>About</p>
+          </a>
+          <a href="#">
+            <p>Accessibility</p>
+          </a>
+          <a href="#">
+            <p>Help</p>
+          </a>
+          <a href="#">
+            <p>Privacy</p>
+          </a>
+          <a href="#">
+            <p>Terms</p>
+          </a>
+          <a href="#">
+            <p>More</p>
+          </a>
+        </div>
+        <div class="copyright">
+          <p>Seth Vandenbos 2022</p>
+        </div>
+      </div>
+
+    </footer>
 
   </body>
-  <script>
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-
-
-    window.addEventListener('resize', () => {
-      vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    });
-</script>
 </html>

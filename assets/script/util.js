@@ -18,4 +18,8 @@ function print(selector) {
   console.log(selector);
 }
 
-export { onEvent, select, selectAll, print }
+function create(element, parent = document) {
+  return parent.createElement(element);
+}
+
+export { onEvent, select, selectAll, print, create }
