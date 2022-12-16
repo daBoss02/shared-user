@@ -2,18 +2,29 @@
 
 // Utility Functions
 
-function onEvent(event, selector, callback) {
-  return selector.addEventListener(event, callback);
-}
+import { onEvent, select, selectAll, print } from './util.js';
 
-function select(selector, parent = document) {
-  return parent.querySelector(selector);
-}
+const loginBtn = select('.login-btn');
+const incorrect = select('.incorrect')
 
-function selectAll(selector, parent = document) {
-  return parent.querySelectorAll(selector);
-}
+localStorage.setItem('email', encodeURIComponent('seth@email.com'));
+localStorage.setItem('password', 'password')
 
-function print(selector) {
-  console.log(selector);
-}
+console.log(localStorage);
+
+console.log(decodeURIComponent(localStorage.getItem('email')));
+
+onEvent('click', loginBtn, () => {
+  console.log('clicked')
+  const emailInp = select('.email').value;
+  const passwordInp = select('.password').value;
+  console.log(passwordInp.value)
+  let pass = (encodeURIComponent(emailInp) === localStorage.getItem('email'))
+             && (passwordInp === localStorage.getItem('password'))
+  if (pass) {
+    window.location = 'home.html';
+    incorrect.innerText = ''
+  } else {
+    incorrect.innerText = '*Incorrect Username or Password*'
+  }
+})
